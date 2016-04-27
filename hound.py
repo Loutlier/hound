@@ -80,7 +80,7 @@ elif url:
 		DB().increase(""" 
 			create table %s(
 			id int not null primary key auto_increment,
-			url varchar(30)	not null comment 'url',
+			url text not null comment 'url',
 			ip varchar(40)	not null comment 'ip',
 			recursion int not null comment 'digui',
 			Crawler int not null comment 'pachong'
