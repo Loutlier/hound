@@ -43,9 +43,9 @@ class blast(simple):
 		print '\n '
 		while True:
 			
-			progress.write("\033[1;32;1m mm^mdomain: %s ----total: %i , ----Already request:%i  \r \033[0m" % (url,total,simple.walk) );
+			progress.write("\033[1;32;1m mdomain: %s ----total: %i , ----Already request:%i  \r \033[0m" % (url,total,simple.walk) );
 			progress.flush();
-			if simple.walk+80 >= total:
+			if simple.walk+1800 >= total:
 				print ' \n \n Send request: %i' % (total)
 				print '\n Wait for all requests to end! '
 				break;
